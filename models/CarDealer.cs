@@ -18,7 +18,7 @@ namespace CivSem1Challenge2_CarSystem.models {
         }
 
         public string GetAddress () {
-            return $"{this.StreetNo} {this.Street} {this.City}";
+            return $"{this.StreetNo} {this.Street} {this.City} | Dealer ID: {this.DealerId}";
         }
     }
 }

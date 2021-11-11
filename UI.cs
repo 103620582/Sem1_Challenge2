@@ -46,6 +46,10 @@ namespace CivSem1Challenge2_CarSystem
                     // use GetAddress() to do this
 
                     //----------
+
+                    foreach (CarDealer address in this.CarDealers) {
+                        Console.WriteLine(address.GetAddress());
+                    }
                     break;
                 
                 case "2":
