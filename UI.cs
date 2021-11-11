@@ -48,7 +48,7 @@ namespace CivSem1Challenge2_CarSystem
                     //----------
 
                     foreach (CarDealer address in this.CarDealers) {
-                        Console.WriteLine(address.GetAddress());
+                        System.Console.WriteLine(address.GetAddress());
                     }
                     break;
                 
@@ -82,6 +82,7 @@ namespace CivSem1Challenge2_CarSystem
                 case "4":
                     //TODO: Print the amount of cars in the system
                     // Create and call a method/function named GetNumCars() to do this.
+                    System.Console.WriteLine(GetNumCars());
                     break;
 
                 case "5":
@@ -155,7 +156,9 @@ namespace CivSem1Challenge2_CarSystem
 
 
         //TODO: create the GetNumCars() method/function here
-
+        private int GetNumCars() {
+            return this.Cars.Count;
+        }
 
         //---------------------
 
