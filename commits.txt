@@ -1,0 +1,41 @@
+commit 5033b65
+Author: 103620582 <103620582@student.swin.edu.au>
+Date:   Fri Nov 12 12:58:32 2021 +1100
+
+    FINAL COMMIT (adjusted GetDetails())
+
+commit 56b3ddc
+Author: 103620582 <103620582@student.swin.edu.au>
+Date:   Fri Nov 12 12:41:34 2021 +1100
+
+    complete
+
+commit 9e5e1b0
+Author: 103620582 <103620582@student.swin.edu.au>
+Date:   Fri Nov 12 12:15:00 2021 +1100
+
+    GetCarDetails()
+
+commit c826ea0
+Author: 103620582 <103620582@student.swin.edu.au>
+Date:   Fri Nov 12 10:37:54 2021 +1100
+
+    GetTotalCostCarDealers()
+
+commit 24c65c2
+Author: 103620582 <103620582@student.swin.edu.au>
+Date:   Fri Nov 12 09:36:37 2021 +1100
+
+    GetNumCars()
+
+commit 795df54
+Author: 103620582 <103620582@student.swin.edu.au>
+Date:   Fri Nov 12 09:29:14 2021 +1100
+
+    GetAddress()
+
+commit bea9c57
+Author: 103620582 <103620582@student.swin.edu.au>
+Date:   Fri Nov 12 09:16:16 2021 +1100
+
+    initial
