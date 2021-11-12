@@ -47,6 +47,8 @@ namespace CivSem1Challenge2_CarSystem
 
                     //----------
 
+                    //loop through addresses within CarDealers
+
                     foreach (CarDealer address in this.CarDealers) {
                         System.Console.WriteLine(address.GetAddress());
                     }
@@ -171,6 +173,7 @@ namespace CivSem1Challenge2_CarSystem
         {
             //TODO: write code find the relevant car in this.Cars and return the car's details
             // should use the method GetDetails() from Car
+
             foreach (Car car in this.Cars) {
                 if (car.Registration == rego) {
                     return car.GetDetails();
