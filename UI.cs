@@ -109,7 +109,7 @@ namespace CivSem1Challenge2_CarSystem
                     while(!int.TryParse(Console.ReadLine(), out price)) {
                         System.Console.WriteLine("Invalid, enter again");
                     }
-
+                    
                     //TODO: print the listing of PRICE of UNDER OR EQUAL TO a given price and manufactured BEFORE a given year
                     break;
 
@@ -171,6 +171,11 @@ namespace CivSem1Challenge2_CarSystem
         {
             //TODO: write code find the relevant car in this.Cars and return the car's details
             // should use the method GetDetails() from Car
+            foreach (Car car in this.Cars) {
+                if (car.Registration == rego) {
+                    return car.GetDetails();
+                }
+            }
             return null;
         }
 
@@ -218,6 +223,8 @@ namespace CivSem1Challenge2_CarSystem
             }
 
             //TODO: create and add the new car to the this.Cars list
+            Listing addNewCar = new Listing (rego, make, model, yom, cost, price);
+                this.Cars.Add(addNewCar);
 
             System.Console.Write("Enter car dealer id to add the car to: ");
             while(!int.TryParse(Console.ReadLine(), out dealerId)) {
