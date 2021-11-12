@@ -184,6 +184,11 @@ namespace CivSem1Challenge2_CarSystem
         {
             //TODO: write code find the relevant car dealer by DealerId in this.CarDealers and return the number of listings
             // if num doesn't exist in CarDealers, return -1
+            foreach (CarDealer numListings in this.CarDealers) {
+                if (numListings.DealerId == num) {
+                    return numListings.Listings.Count;
+                }
+            }
             return -1;
         }
 
@@ -229,6 +234,12 @@ namespace CivSem1Challenge2_CarSystem
             System.Console.Write("Enter car dealer id to add the car to: ");
             while(!int.TryParse(Console.ReadLine(), out dealerId)) {
                 System.Console.WriteLine("Invalid, enter again");
+            }
+
+            foreach (CarDealer c in this.CarDealers) {
+                if (c.DealerId == dealerId) {
+                    c.Listings.Add(addNewCar);
+                }
             }
 
 
